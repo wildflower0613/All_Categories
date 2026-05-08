@@ -60,13 +60,13 @@ def extrbook_data(book_url: str) -> dict:
     book_dict["category"] = cat_name
 
     book_imagetag = soup.find("img")["src"]
-    if head.status_code == 200:
+    if response.status_code == 200:
         imageurl = "https://books.toscrape.com/" + book_imagetag.replace("../../", "")
         image_download = requests.get(imageurl)
         with open("image_" + safetitle + ".jpg", "wb") as f:
             f.write(image_download.content)
     else:
-        book_imagetag = ""
+        print("Placeholder or empty image skipped.")
 
     return book_dict
 
