@@ -1,9 +1,9 @@
 ﻿#  Price Extraction Program for Books to Scrape 
  
-##Description 
+## Description 
 This project provides a useful web-scraping tool to monitor book prices on-demand from rival book sellers. Aside from prices, this tool can investigate additional spects such as book prices,rating, title, etc. 
 
-##Installation
+## Installation
 - Import necesary packages: re, csv, time, requests:
 ```
 - Import re
@@ -16,8 +16,8 @@ This project provides a useful web-scraping tool to monitor book prices on-deman
 from bs4 import BeautifulSoup
 from urlib.parse import urljoin
 ```
-##Usage
+## Usage
 Run the the main script to produce csv files for all categories for the Book to Scrape site. Upon running the main script, book images will be downloaded as separate files as well.
 
-##License
+## License
 Books Online © 2026 
