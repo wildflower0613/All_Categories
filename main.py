@@ -52,6 +52,7 @@ def extrbook_data(book_url: str) -> dict:
 
     title = (book.h3.a['title'])
     safetitle = re.sub(r'[^\w\-]', '_', title)
+    safetitle = safetitle[:80]
     book_dict["title"] = title
 
     price = book.find('p', class_='price_color').get_text()
@@ -60,7 +61,9 @@ def extrbook_data(book_url: str) -> dict:
     book_dict["category"] = cat_name
 
     book_imagetag = soup.find("img")["src"]
-    if response.status_code == 200:
+    imageurl = "https://books.toscrape.com/" + book_imagetag.replace("../../", "")
+    image_download = requests.get(imageurl)
+    if image_download.status_code == 200:
         imageurl = "https://books.toscrape.com/" + book_imagetag.replace("../../", "")
         image_download = requests.get(imageurl)
         with open("image_" + safetitle + ".jpg", "wb") as f:
@@ -122,5 +125,7 @@ for cat in category_links:
         else:
             current_url = None
 
+    save_to_csv(cat_name, books_data)
 
-        save_to_csv(cat_name, books_data)
+
+
