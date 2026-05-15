@@ -86,7 +86,7 @@ def save_to_csv(cat_name, books_data):
         writer.writerows(books_data)
     print(f"Saved {len(books_data)} books to {filename}")
 
-# 2. Loop through each category
+#  Loop through each category
 for cat in category_links:
     cat_name = cat.text.strip()
     cat_url = BASE_URL + cat['href']
@@ -96,7 +96,7 @@ for cat in category_links:
 
     books_data = []
 
-# 3. Handle pagination within the category
+#  Handle pagination within the category
     while current_url:
         print("CURRENT URL:", current_url)
         time.sleep(1)
