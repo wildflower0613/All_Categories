@@ -1,7 +1,7 @@
 ﻿#  Price Extraction Program for Books to Scrape 
  
 ## Description 
-This project provides a useful web-scraping tool to monitor book prices on-demand from rival book sellers. Aside from prices, this tool can investigate additional spects such as book prices,rating, title, etc. 
+This project provides a useful web-scraping tool to monitor book prices on-demand from rival book sellers. Aside from prices, this tool can investigate additional product information such as book prices,rating, title, etc. 
 
 ## Installation
 -Create the virtual environment:
