@@ -55,9 +55,6 @@ def extrbook_data(book_url: str) -> dict:
     safetitle = safetitle[:80]
     book_dict["title"] = title
 
-    price = book.find('p', class_='price_color').get_text()
-    book_dict["price"] = price
-
     book_dict["category"] = cat_name
 
     book_imagetag = soup.find("img")["src"]
