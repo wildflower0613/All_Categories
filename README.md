@@ -4,23 +4,25 @@
 This project provides a useful web-scraping tool to monitor book prices on-demand from rival book sellers. Aside from prices, this tool can investigate additional spects such as book prices,rating, title, etc. 
 
 ## Installation
+-Create the virtual environment:
 
-[[insert requirements.txt file here]] 
+```powershell
+python -m. venv .venv
+```
+-Activate the virtual environment
+```
+.\.venv\Scripts\Activate 
+```
+-Install the required packages:
+```
+pip install -r requirements.txt
+```
 
-- Import necesary packages: re, csv, time, requests:
-```
-- Import re
-- Import csv
-- Import time
-- Import requests
-```
-- Run the following code to import Beautiful Soup and form urls:
-```
-from bs4 import BeautifulSoup
-from urlib.parse import urljoin
-```
+
 ## Usage
-Run the the main script to produce csv files for all categories for the Book to Scrape site. Upon running the main script, book images will be downloaded as separate files as well.
+How to Run the Project
+1. Clone the repository
+   git clone 
 
 ## License
 Books Online © 2026 
