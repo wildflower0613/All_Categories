@@ -30,7 +30,7 @@ git clone https://github.com/wildflower0613/All_Categories.git
 python -m venv .venv
 ```
 3. Activate the virtual environment
-   -In Windows Powershell
+-In Windows Powershell
 ```
 .\.venv\Scripts\Activate
 ```
