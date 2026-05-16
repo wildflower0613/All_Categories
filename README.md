@@ -31,7 +31,8 @@ python -m venv .venv
 ```
 3. Activate the virtual environment
 
-In Windows Powershell```
+- In Windows Powershell
+```
 .\.venv\Scripts\Activate
 ```
 4. Install dependencies
